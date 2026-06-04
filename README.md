@@ -7,25 +7,25 @@ ATAC-seq analysis pipeline for the MorPhiC degron screen (NW_ATAC-Seq02) to eval
 ```
 NW_degronATAC_analysis/
 ├── 00_Peaks/
-│   ├── 00_inputs/          # Input BAMs (see file_structure.txt; not included for size, can be downloaded from Globus currently.)
-│   ├── 01_outputs/         # Per-gene/timepoint peak files (see file_structure.txt; not included for size, can be made available)
+│   ├── 00_inputs/                 # Input BAMs (see file_structure.txt; not included for size, can be downloaded from Globus)
+│   ├── 01_outputs/                # Per-gene/timepoint peak files (see file_structure.txt; not included for size, can be made available)
 │   └── scripts/
-│       ├── 00_run_pipeline.sh      # merges BAMs, call peaks (MACS3), filter by exclusion list
-│       ├── 01_submit_jobs.sh       # SLURM submission wrapper
-│       └── env.yaml                # Conda environment specification
+│       ├── 00_run_pipeline.sh     # merges BAMs, call peaks, filters by exclusion list
+│       ├── 01_submit_jobs.sh      # SLURM submission wrapper
+│       └── env.yaml               # conda env
 │
 ├── 01_DApeaks/
-│   ├── 00_inputs/          # Per-gene metadata TSVs linking BAMs and peaks (see file_structure.txt; not included; can be made available)
+│   ├── 00_inputs/                                 # Per-gene metadata TSVs linking BAMs and peaks (see file_structure.txt; not included; can be made available)
 │   ├── 01_outputs/
 │   │   └── {GENE}/
-│   │       ├── {tp}_vs_0h.tsv.gz               # Differential accessibility results (DESeq2)
+│   │       ├── {tp}_vs_0h.tsv.gz                  # Differential accessibility results (DESeq2)
 │   │       ├── {tp}_vs_0h_DE_MotifEnrich*.tsv.gz  # Motif enrichment in DA peaks
 │   │       ├── {tp}_vs_0h_DE_GSEA_GO_BP.tsv.gz    # GO biological process enrichment
-│   │       ├── {tp}_vs_0h_DE_GSEA_DO.tsv.gz        # Disease ontology enrichment
-│   │       ├── QC_report_{$GENE}.html                  # HTML output report for each gene. It is self-contained, but you will need to download locally for it to render. 
-│   │       ├── dracc_metadata.tsv                  # Metadata for Data Portal Plotting
-│   │       ├── consensus_peaks.bed.gz              # not included; Annotated dataset consensus peaks
-│   │       └── peak_counts.tsv.gz              # not included; Peak x Sample count matrix. 
+│   │       ├── {tp}_vs_0h_DE_GSEA_DO.tsv.gz       # Disease ontology enrichment
+│   │       ├── QC_report_{$GENE}.html             # HTML output report for each gene. It is self-contained, but you will need to download locally for it to render. 
+│   │       ├── dracc_metadata.tsv                 # Metadata for Data Portal Plotting
+│   │       ├── consensus_peaks.bed.gz             # not included; Annotated dataset consensus peaks
+│   │       └── peak_counts.tsv.gz                 # not included; Peak x Sample count matrix. 
 │   └── scripts/
 │       ├── 00_make_metadata.sh             # Builds per-gene metadata TSVs from input dirs
 │       ├── 01_atac_pipeline.R              # Main DA pipeline (DESeq2, motif, GSEA)
@@ -34,11 +34,11 @@ NW_degronATAC_analysis/
 │       └── QC_report.Rmd                   # Per-gene QC report template
 │
 └── 02_e2g/
-    ├── 00_inputs/          # Input config and qsub files (see file_structure.txt; not included)
-    ├── 01_outputs/         # TBD -- will update soon.
-    ├── ENCODE_rE2G/         # External GitHub repository (dev branch; not included)
+    ├── 00_inputs/                # Input config and qsub files (see file_structure.txt; not included)
+    ├── 01_outputs/               # TBD -- will update soon.
+    ├── ENCODE_rE2G/              # External GitHub repository (dev branch; not included)
     └── scripts/
-        └── 00_make_metadata.sh             # Write config, qsub, and creates neccessary symlinks to peak files. 
+        └── 00_make_metadata.sh   # Write config, qsub, and creates neccessary symlinks to peak files. 
 ```
 
 ## Pipeline overview
@@ -58,7 +58,7 @@ Outputs per gene/timepoint: `ATAC-{GENE}-{tp}_peaks.filtered.narrowPeak.gz`, `_p
 
 1. **Build metadata** — run `00_make_metadata.sh` to generate `{GENE}.metadata.tsv` files linking BAM paths and peak paths
 2. **Run DA pipeline** — `02_submitJobs.sh` submits one SLURM job per gene running `01_atac_pipeline.R`, which:
-   - Merges per-timepoint peaks into a consensus peak set
+   - Merges per-timepoint peaks into one consensus peak set
    - Counts reads over peaks with `Rsubread::featureCounts`
    - Filters to peaks with >1 CPM in at least 2 samples (replicate size)
    - Annotates peaks with `ChIPseeker` (gene, distance to TSS)
