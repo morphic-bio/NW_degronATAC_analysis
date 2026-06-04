@@ -1,0 +1,519 @@
+---
+title: "`r paste('QC Report:', params$gene)`"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+date: "`r Sys.Date()`"
+params:
+  gene: NULL
+  input_file: NULL
+  out_dir: NULL
+---
+
+
+```{r, warning=FALSE}
+suppressPackageStartupMessages({
+  library(dplyr); library(tidyr)
+  library(DESeq2)
+  library(ggplot2)
+  library(ggrepel)
+  library(ComplexHeatmap)
+  library(reshape2)
+  library(BSgenome.Hsapiens.UCSC.hg38)
+  library(gridExtra)
+  library(kableExtra)
+  library(clusterProfiler)
+  library(stringr)
+})
+
+
+par(mar=c(1,1,1,1), cex.axis=0.5, mfrow=c(1,1))
+`%ni%` <- purrr::compose(`!`, `%in%`)
+
+load(params$input_file)
+```
+
+## Sample Overview
+```{r}
+to_plot = c("sampleID","timepoint", "total_mapped", "pct_mito", "pct_nfr", "pct_mono", "nfr_mono_ratio")
+
+atac_meta <- as.data.frame(meta_df) %>%
+  dplyr::filter(!is.null(sampleID) & sampleID != "NULL") %>% 
+  dplyr::select(all_of(to_plot)) %>% 
+  tidyr::pivot_longer(cols = setdiff(c(to_plot), c("sampleID", "timepoint")), names_to = "type", values_to = "count") 
+
+atac_meta$timepoint <- factor(atac_meta$timepoint, levels = c("0h", "6h", "24h"))
+atac_meta <- atac_meta %>% 
+  arrange(timepoint) %>% 
+  mutate(sampleID = factor(sampleID, levels = unique(sampleID)))
+
+ggplot(atac_meta[atac_meta$type == "total_mapped", ], aes(x = sampleID, y = count)) +
+  geom_col(position = "stack", fill="steelblue") +
+  scale_x_discrete(drop = FALSE)+
+  labs(x = "Sample", y = "Read Count") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Number of Reads per Sample")
+
+ggplot(atac_meta[atac_meta$type == "pct_mito", ], aes(x = sampleID, y = count)) +
+  geom_col(position = "stack", fill="steelblue") +
+  scale_x_discrete(drop = FALSE)+
+  labs(x = "Sample", y = "Percent of Reads") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Percent Reads mapping to chrM")
+
+ggplot(atac_meta[atac_meta$type == "nfr_mono_ratio", ], aes(x = sampleID, y = count)) +
+  geom_col(position = "stack", fill="steelblue") +
+  scale_x_discrete(drop = FALSE)+
+  labs(x = "Sample", y = "Read Ratio") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Ratio of NFR/mono-nucleosome fragments")
+
+```
+
+```{r}
+meta_df %>% 
+  dplyr::select(-bam_path & -merged_bam_path & -peak_path) %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+
+## Consensus Peak Construction {.tabset}
+
+```{r}
+df = deseq_sweep$sweep_results
+ggplot(df, aes(peaks_retained, peaks_significant, color=timepoint)) +
+  geom_line() +
+  geom_point(size = 3) +
+  scale_color_manual(values=c("cornflowerblue", "blue")) + 
+  geom_text( aes(label = cpm_threshold), nudge_y = 0.02 * max(df$peaks_significant)) +
+  labs(
+    x = "Peaks retained",
+    y = "# significant peaks (FDR < 0.05)"
+  ) +
+  theme_bw()
+```
+
+## Read Count Matrix
+```{r, fig.height=10, fig.width=10}
+#PCA
+atac_meta <- as.data.frame(meta_df)
+deseq_object = deseq_sweep$deseq_object
+colnames(deseq_object$ddsnorm) <- gsub(".bam", "", colnames(deseq_object$ddsnorm))
+
+pca <- prcomp(t(deseq_object$ddsnorm), center = T, scale. = T)
+percentVar <- pca$sdev^2/sum(pca$sdev^2)
+plot_df <- merge(atac_meta, pca$x[, 1:2], by.x="sampleID", by.y="row.names")
+
+g1 <- ggplot(plot_df, aes(x = PC1, y = PC2, color=timepoint, label=sampleID)) +
+  geom_point(size = 5) + 
+  coord_fixed() + theme_bw() +
+  xlab(paste0("PC1: ", round(percentVar[1] * 100), "% variance")) + 
+  ylab(paste0("PC2: ", round(percentVar[2] * 100), "% variance")) + 
+  ggtitle("PCA Read Count Matrix") +
+  geom_label_repel(fill = NA, label.size = 0, show.legend = FALSE)
+
+g1
+```
+
+```{r}
+col_order = atac_meta$sampleID[atac_meta$sampleID != "NULL"]
+cor_mat <- cor(deseq_object$ddsnorm)
+cor_mat[lower.tri(cor_mat)] <- NA
+cor_df <- reshape2::melt(cor_mat)
+
+cor_df <- cor_df %>%
+  mutate(Var1 = factor(Var1, levels = col_order),
+        Var2 = factor(Var2, levels = rev(col_order))
+        )
+
+
+g1 <- ggplot(cor_df, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradientn(colours = c( "lightblue", "blue4"), na.value = "white") +
+  scale_x_discrete(drop = FALSE) +
+  scale_y_discrete(drop = FALSE) +
+  theme_minimal() +
+  labs(x = "Sample 2", y = "Sample 1", fill = "Pearson Correlation") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Pearson Correlation of Read Counts")
+g1
+```
+
+```{r}
+identify_outliers <- function(x, multiplier=2){
+  iqr <- IQR(x, na.rm = TRUE)
+  
+  #lower <- quantile(x, 0.25, na.rm = TRUE) - (multiplier * iqr)
+  upper <- quantile(x, 0.75, na.rm = TRUE) + (multiplier * iqr)
+  
+  #outliers = x[x < lower | x > upper]
+  outliers = x[x > upper]
+  return(outliers)
+}
+
+plot_df = data.frame("AverageCount" = rowMeans(deseq_object$ddsnorm),
+                     "PeakLength" = width(GRanges(rownames(deseq_object$ddsnorm))))
+
+#g1 <- ggplot(plot_df, aes(x = PeakLength, y = AverageCount)) +
+#  geom_point()
+#ggplot(plot_df, aes(x = AverageCount)) + geom_boxplot()
+
+multiplier = 5
+tmp = identify_outliers(plot_df$AverageCount, multiplier)
+if (length(tmp) > 0){
+  sprintf("Note: You may have outliers (> %sxIQR) by average coverage for: %s regions", 
+          multiplier, length(tmp))
+}
+
+tmp = identify_outliers(plot_df$PeakLength, multiplier)
+if (length(tmp) > 0){
+  sprintf("Note: You may have outliers (> %sxIQR) by peak length for: %s regions", 
+          multiplier, length(tmp))
+}
+```
+
+
+## Differentially Accessible Peaks {.tabset}
+
+```{r}
+clean_de_results <- function(deseq_df, peaks_annot) {
+  cols_to_remove = c("seqnames", "start", "end", "width", "strand", "all_summits", "mean_summit", "summit_spread")
+  
+  df <- data.frame(deseq_df) %>%
+      mutate(peak_coord = rownames(.)) %>%
+      dplyr::left_join(as.data.frame(peaks_annot), by = "peak_coord") %>%
+      dplyr::select(-all_of(cols_to_remove)) %>% 
+      mutate(annotation_class = sub("\\s*\\(.*", "", annotation)) %>%
+      dplyr::relocate("peak_coord") 
+  
+  return(df)
+}
+
+if ("res_list_annot" %ni% names(deseq_object)){
+  deseq_object$res_list_annot = list()
+  for (i in names(deseq_object$res_list)){
+    deseq_object$res_list_annot[[i]] = clean_de_results(deseq_df = deseq_object$res_list[[i]], 
+                                                   peaks_annot = consensus_peaks[["dataset_peaks_filt"]])
+  }
+}
+  
+```
+
+### Top 20
+```{r results='asis'}
+for (cond in names(deseq_object$res_list)){
+  cat(sprintf("Results for %s:", cond))
+  table_html <- data.frame(deseq_object$res_list_annot[[cond]]) %>% 
+    arrange(padj) %>% head(n=20) %>% 
+    dplyr::select(baseMean, log2FoldChange, padj, annotation, SYMBOL) %>%
+    mutate(padj = formatC(padj, format = "e", digits = 2)) %>%
+    kbl(digits = 2) %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed")) %>% 
+    scroll_box(width = "800px", height = "800px")
+  cat(as.character(table_html))
+}
+```
+
+### MA Plot
+```{r}
+padj_thresh  <- 0.05
+lfc_thresh   <- 0
+```
+
+```{r}
+internal_MA_plot <- function(plot_df, padj_thresh, lfc_thresh){
+  
+  plot_df <- plot_df %>%
+    mutate(sig = case_when(
+      padj > padj_thresh | is.na(padj) ~ "NS",
+      log2FoldChange >= lfc_thresh ~ "up",
+      log2FoldChange <= -lfc_thresh ~ "down",
+      TRUE ~ "NS"
+      )) %>%
+    mutate(sig = factor(sig, levels = c("down", "up", "NS")))
+
+  lf_lim = max(abs(plot_df$log2FoldChange))
+  sig_counts <- table(factor(plot_df$sig, levels=c("down","up","NS")))
+
+  g1 <- ggplot(plot_df, aes(x=log2(baseMean), y=log2FoldChange, col=sig)) + 
+    geom_point() + 
+    scale_color_manual(values=c("darkblue", "#A30000", "grey"), 
+                       name="", drop=FALSE, 
+                       lab=c(paste0("Down: ",sig_counts[["down"]]), 
+                             paste0("Up: ", sig_counts[["up"]]),
+                             paste0("NS: ", sig_counts[["NS"]]))) +
+    ylim(c(-lf_lim, lf_lim)) +
+    theme_bw() + 
+    xlab("Log2 Mean Expression") + ylab("Log2 Fold Change")
+  return(g1)
+}
+
+for (cond in names(deseq_object$res_list)){
+  g1 <- internal_MA_plot(data.frame(deseq_object$res_list[[cond]]), 
+                         padj_thresh, 
+                         lfc_thresh) + 
+    ggtitle(sprintf("MA plot: %s vs 0h", cond))
+  print(g1)
+}
+```
+
+### Peak Annotation
+```{r}
+internal_class_barchart <- function(input_df, padj_thresh, lfc_thresh){
+  #annot_df must have "peak_coord"
+  
+  # df <- data.frame(input_df) %>%
+  #   mutate(peak_coord = rownames(.)) %>%
+  #   dplyr::left_join(annot_df, by = c("peak_coord")) %>% 
+  #   tibble::column_to_rownames("peak_coord") %>%
+  #   dplyr::select(-seqnames, -start, -end, -width, -strand) %>%
+  #   mutate(annotation_class=sub("\\s*\\(.*", "", annotation))
+  
+  plot_df = data.frame(input_df) %>% 
+    dplyr::filter(padj < padj_thresh & !is.na(padj), abs(log2FoldChange) >= lfc_thresh) %>% 
+    pull(annotation_class) %>% 
+    table() %>% 
+    as.data.frame() 
+  
+  if (nrow(plot_df) == 0) {
+    message(sprintf("No DE peaks found at padj < %s and |LFC| >= %s", 
+                    padj_thresh, lfc_thresh))
+    return(invisible(NULL))
+  }
+  
+  colnames(plot_df) <- c("annotation_class", "count")
+  plot_df$prop <- plot_df$count / sum(plot_df$count)
+  
+  g1 <- ggplot(plot_df, aes(x = reorder(annotation_class, -prop), y = prop)) +
+    geom_col(fill="steelblue") +
+    scale_y_continuous(labels = scales::percent) +
+    geom_text(aes(label = count), vjust = -0.3, size = 3) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+    labs(x = "Peak Annotation Class", 
+         y = "Proportion of Total DE Peaks")
+    
+  return(g1)
+}
+
+for (cond in names(deseq_object$res_list_annot)){
+  g1 <- internal_class_barchart(deseq_object$res_list_annot[[cond]], 
+                                padj_thresh, 
+                                lfc_thresh) +
+    ggtitle(sprintf("DE Peak Annotations: %s vs 0h", cond))
+  print(g1)
+}
+
+```
+
+
+### Motif Enrichment
+```{r}
+output_pwms <- function(sel, outpath){
+  pwms <- rowData(sel)$motif.pwm
+  names <- rowData(sel)$motif.name
+  motif <- rowData(sel)$motif.id
+  
+  for (i in seq_along(pwms)) {
+    png(sprintf("%s/%s_%s.png", outpath, names[i], motif[i]), width=800, height=400)
+    mat <- exp(pwms[[i]]@profileMatrix)
+    mat <- sweep(mat, 2, colSums(mat), "/")
+    seqLogo::seqLogo(mat)  
+    dev.off()
+  }
+}
+```
+
+```{r, fig.width=20, fig.height=8}
+#new_dir = file.path(params$out_dir, "seqLogos/")
+#dir.create(new_dir, recursive = TRUE)
+
+for (cond in names(enrich_list)){
+  #return(list("monalisa_obj"=enrich_res, "enrich_df"=results_df))
+  showN = 20
+  
+  enrich_res = enrich_list[[cond]]$monalisa_obj
+  enrich_df = enrich_list[[cond]]$enrich_df
+  
+  #head(enrich_df, showN)
+  
+  plot_df = enrich_res[rownames(enrich_res) %in% rownames(head(enrich_df, showN))]
+  sel = plot_df[, "foreground"]
+  metadata(sel)$bins <- droplevels(metadata(sel)$bins[
+    metadata(sel)$bins == "foreground"
+  ])
+  
+  #output_pwms(sel, new_dir)
+  
+  ret <- plotMotifHeatmaps(
+    x             = sel,
+    which.plots   = c("log2enr", "negLog10Padj"),
+    width         = 2,
+    cluster       = TRUE,
+    show_seqlogo  = TRUE,
+    show_motif_GC = TRUE, 
+    doPlot       = FALSE
+  )
+  
+  ht_list <- Reduce(ComplexHeatmap::add_heatmap, ret)
+  ComplexHeatmap::draw(
+    ht_list,
+    column_title = sprintf("Top %i Enriched in %s DE Peaks", showN, cond)
+  )
+}
+
+```
+
+### GSEA Enrichment: GO
+```{r}
+plotGO <- function(plot_df, title=""){
+    g1 <- ggplot(plot_df, aes(x = reorder(Description, NES), 
+                              y = NES, size = setSize, color = p.adjust)) +
+    geom_point(alpha = 0.8) +
+    coord_flip() +
+    scale_x_discrete(labels = function(x) str_wrap(x, width = 40)) +
+    scale_color_gradient(low = "firebrick",high = "steelblue") +
+    scale_size(range = c(2, 6)) +
+    labs(x = NULL, y = "Normalized Enrichment Score (NES)", 
+         color = "Adjusted p-value", size = "Gene set size") +
+    theme_bw(base_size = 12) 
+  
+  
+  g2 <- ggplot(plot_df, aes(x = reorder(Description, NES), y = NES)) +
+    geom_col(fill = "steelblue") +
+    coord_flip() +
+    scale_x_discrete(labels = function(x) str_wrap(x, width = 40)) +
+    theme_bw() + 
+    labs(x = NULL, y = "Normalized Enrichment Score (NES)" )
+  
+  grid.arrange(g1, g2, ncol=2, top = title)
+}
+```
+
+```{r, warning=FALSE, fig.width=20, fig.height=10, message=FALSE}
+hard_coded_sorry = "GO_BP"
+for (cond in names(gsea_list[[hard_coded_sorry]])){
+  ego_df <- gsea_list[[hard_coded_sorry]][[cond]]
+  plot_df <- ego_df %>% filter(p.adjust < 0.05) %>% head(n=20)
+  if (nrow(plot_df) == 0) {
+    message("No enriched terms — skipping plot.")
+    return(NULL)
+  }
+  plotGO(plot_df, title=sprintf("GSEA GO enrichment: %s vs 0h", cond))
+}
+```
+
+### GSEA Enrichment: Disease Ontology
+```{r, warning=FALSE, fig.width=20, fig.height=10, message=FALSE}
+hard_coded_sorry = "DO"
+for (cond in names(gsea_list[[hard_coded_sorry]])){
+  ego_df <- gsea_list[[hard_coded_sorry]][[cond]]
+  
+  plot_df <- ego_df %>% filter(p.adjust < 0.05) %>% head(n=20)
+  if (nrow(plot_df) == 0) {
+    message("No enriched terms — skipping plot.")
+    return(NULL)
+  }
+  plotGO(plot_df, title=sprintf("GSEA DO enrichment: %s vs 0h", cond))
+}
+
+```
+
+## {-}
+
+## Cross-sample comparisons
+```{r, fig.height=8, fig.width=12}
+## 2 sample specific plots:
+
+make_tmp <- function(df) {
+  tmp <- as.data.frame(df[, c("log2FoldChange", "padj")])
+  tmp$peak <- rownames(tmp)
+  tmp$sig <- ifelse(is.na(tmp$padj) | tmp$padj > 0.05, "NS", "sig")
+  return(tmp)
+}
+
+xy_FCplot <- function(plot_df){
+  tbl = table(factor(plot_df$sig, levels=c("neither","both","6hr_only", "24hr_only")))
+  
+  g1 <- ggplot(plot_df, aes(x=log2FoldChange_6hr, y=log2FoldChange_24hr, col=sig)) + 
+    geom_point(size=1) + 
+    scale_color_manual(
+      values = c("grey", "salmon", "orange", "cornflowerblue"),
+      name="DE peak in:", drop=FALSE, 
+      labels=c(paste0("Neither: ",tbl[["neither"]]),
+               paste0("Both TPs: ",tbl[["both"]]), 
+               paste0("6hr only: ",tbl[["6hr_only"]]), 
+               paste0("24hr only: ",tbl[["24hr_only"]]))
+      ) +
+  xlab("Log2 Fold Change: 6hr vs 0hr") +
+  ylab("Log2 Fold Change: 24hr vs 0hr") +
+  ggtitle("Shared DE peaks between conditions") +
+  geom_abline(intercept = 0, slope = 1, color = "black", linetype = "dashed") + 
+  theme_bw() 
+  return(g1)
+}
+
+count_heatmap <- function(mymat){
+  scaled_mat = t(scale(t(mymat)))
+  ht <- Heatmap(scaled_mat, 
+              name = "Z-score", 
+              show_column_names = TRUE, 
+              show_row_names = FALSE,
+              cluster_columns = TRUE,
+              #col = colorRamp2(c(-2, 0, 2), c("darkblue", "white", "#A30000")), 
+              heatmap_legend_param = list(direction="vertical", nrow=1),
+              row_title = "Shared DE Peaks", row_title_rot = 90, 
+              column_title = "Samples", column_title_rot = 0, 
+              column_title_side = "bottom", column_names_rot = 45)
+              #use_raster = TRUE)
+  return(ht)
+}
+```
+
+```{r}
+
+if (all(sort(names(deseq_object$res_list)) == c("24h","6h"))) {
+
+  tmp1 <- make_tmp(deseq_object$res_list[["6h"]])
+  tmp2 <- make_tmp(deseq_object$res_list[["24h"]])
+  
+  plot_df <- full_join(tmp1, tmp2, by = "peak", suffix = c("_6hr","_24hr"))
+  plot_df$sig <- with(plot_df, ifelse(sig_6hr=="sig" & sig_24hr=="sig","both",
+                               ifelse(sig_6hr=="sig" & sig_24hr!="sig","6hr_only",
+                               ifelse(sig_6hr!="sig" & sig_24hr=="sig","24hr_only","neither"))))
+  plot_df$sig <- as.factor(plot_df$sig)
+  plot_df$sig <- factor(plot_df$sig, levels = c("neither","both", "6hr_only", "24hr_only"))
+  plot_df <- plot_df %>% arrange(sig)
+  
+  g1 = xy_FCplot(plot_df)
+  print(g1)
+  
+  plot_df_shared = plot_df %>% filter(sig=="both")
+  if (nrow(plot_df_shared) != 0){
+    mymat <- deseq_object$ddsnorm %>% 
+      data.frame() %>% 
+      filter(row.names(deseq_object$ddsnorm) %in% plot_df_shared$peak)
+    ht <- count_heatmap(mymat)
+    draw(ht, merge_legend = TRUE)
+    
+  }
+}
+```
+
+```{r}
+sessionInfo()
+```
+
+```{r}
+knitr::knit_exit()
+```
+
+

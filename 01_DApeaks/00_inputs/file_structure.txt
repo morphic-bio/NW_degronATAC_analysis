@@ -1,0 +1,35 @@
+/oak/stanford/groups/engreitz/Users/aeveritt/morphic_degron/atac/01_DApeaks/00_inputs/
+├── ARID1A.metadata.tsv
+├── ARID3B.metadata.tsv
+├── ATR.metadata.tsv
+├── CCNC.metadata.tsv
+├── CHAF1A.metadata.tsv
+├── CHD4.metadata.tsv
+├── FOXA1.metadata.tsv
+├── FOXM1.metadata.tsv
+├── HDAC3.metadata.tsv
+├── INO80.metadata.tsv
+├── metadata.tsv
+├── NAT10.metadata.tsv
+├── NUP133.metadata.tsv
+├── NUP153.metadata.tsv
+├── NUP210.metadata.tsv
+├── NUP214.metadata.tsv
+├── NUP62.metadata.tsv
+├── NUP88.metadata.tsv
+├── PRMT5.metadata.tsv
+├── RAD21.metadata.tsv
+├── RBBP7.metadata.tsv
+├── SMARCA1.metadata.tsv
+├── SMARCA4.metadata.tsv
+├── SMARCA5.metadata.tsv
+├── SMARCB1.metadata.tsv
+├── SMARCC1.metadata.tsv
+├── SMARCD1.metadata.tsv
+├── SSU72.metadata.tsv
+├── TFDP1.metadata.tsv
+├── U2AF2.metadata.tsv
+├── WDHD1.metadata.tsv
+└── YY1.metadata.tsv
+
+0 directories, 32 files

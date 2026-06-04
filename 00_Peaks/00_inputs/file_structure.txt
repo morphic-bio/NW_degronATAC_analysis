@@ -1,0 +1,1310 @@
+/scratch/groups/engreitz/Users/aeveritt/NW_ATAC/00_input_data/
+├── ARID1A
+│   └── 6h
+│       ├── ATAC-ARID1A-6h-1
+│       │   ├── ATAC-ARID1A-6h-1.bam
+│       │   ├── ATAC-ARID1A-6h-1.bam.bai
+│       │   ├── ATAC-ARID1A-6h-1.bw
+│       │   ├── ATAC-ARID1A-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-ARID1A-6h-1.peaks.summits.bed
+│       │   └── ATAC-ARID1A-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-ARID1A-6h-2
+│           ├── ATAC-ARID1A-6h-2.bam
+│           ├── ATAC-ARID1A-6h-2.bam.bai
+│           ├── ATAC-ARID1A-6h-2.bw
+│           ├── ATAC-ARID1A-6h-2.peaks.narrowPeak
+│           ├── ATAC-ARID1A-6h-2.peaks.summits.bed
+│           └── ATAC-ARID1A-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── ARID3B
+│   ├── 0h
+│   │   ├── ATAC-ARID3B-0h-1
+│   │   │   ├── ATAC-ARID3B-0h-1.bam
+│   │   │   ├── ATAC-ARID3B-0h-1.bam.bai
+│   │   │   ├── ATAC-ARID3B-0h-1.bw
+│   │   │   ├── ATAC-ARID3B-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-ARID3B-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-ARID3B-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-ARID3B-0h-2
+│   │       ├── ATAC-ARID3B-0h-2.bam
+│   │       ├── ATAC-ARID3B-0h-2.bam.bai
+│   │       ├── ATAC-ARID3B-0h-2.bw
+│   │       ├── ATAC-ARID3B-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-ARID3B-0h-2.peaks.summits.bed
+│   │       └── ATAC-ARID3B-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-ARID3B-24h-1
+│   │   │   ├── ATAC-ARID3B-24h-1.bam
+│   │   │   ├── ATAC-ARID3B-24h-1.bam.bai
+│   │   │   ├── ATAC-ARID3B-24h-1.bw
+│   │   │   ├── ATAC-ARID3B-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-ARID3B-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-ARID3B-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-ARID3B-24h-2
+│   │       ├── ATAC-ARID3B-24h-2.bam
+│   │       ├── ATAC-ARID3B-24h-2.bam.bai
+│   │       ├── ATAC-ARID3B-24h-2.bw
+│   │       ├── ATAC-ARID3B-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-ARID3B-24h-2.peaks.summits.bed
+│   │       └── ATAC-ARID3B-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-ARID3B-6h-1
+│       │   ├── ATAC-ARID3B-6h-1.bam
+│       │   ├── ATAC-ARID3B-6h-1.bam.bai
+│       │   ├── ATAC-ARID3B-6h-1.bw
+│       │   ├── ATAC-ARID3B-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-ARID3B-6h-1.peaks.summits.bed
+│       │   └── ATAC-ARID3B-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-ARID3B-6h-2
+│           ├── ATAC-ARID3B-6h-2.bam
+│           ├── ATAC-ARID3B-6h-2.bam.bai
+│           ├── ATAC-ARID3B-6h-2.bw
+│           ├── ATAC-ARID3B-6h-2.peaks.narrowPeak
+│           ├── ATAC-ARID3B-6h-2.peaks.summits.bed
+│           └── ATAC-ARID3B-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── ATR
+│   ├── 0h
+│   │   ├── ATAC-ATR-0h-2
+│   │   │   ├── ATAC-ATR-0h-2.bam
+│   │   │   ├── ATAC-ATR-0h-2.bam.bai
+│   │   │   └── ATAC-ATR-0h-2.bw
+│   │   └── ATAC-ATR-0h-3
+│   │       ├── ATAC-ATR-0h-3.bam
+│   │       ├── ATAC-ATR-0h-3.bam.bai
+│   │       └── ATAC-ATR-0h-3.bw
+│   ├── 24h
+│   │   ├── ATAC-ATR-24h-2
+│   │   │   ├── ATAC-ATR-24h-2.bam
+│   │   │   ├── ATAC-ATR-24h-2.bam.bai
+│   │   │   └── ATAC-ATR-24h-2.bw
+│   │   └── ATAC-ATR-24h-3
+│   │       ├── ATAC-ATR-24h-3.bam
+│   │       ├── ATAC-ATR-24h-3.bam.bai
+│   │       └── ATAC-ATR-24h-3.bw
+│   └── 6h
+│       └── ATAC-ATR-6h-2
+│           ├── ATAC-ATR-6h-2.bam
+│           ├── ATAC-ATR-6h-2.bam.bai
+│           └── ATAC-ATR-6h-2.bw
+├── CCNC
+│   ├── 0h
+│   │   ├── ATAC-CCNC-0h-1
+│   │   │   ├── ATAC-CCNC-0h-1.bam
+│   │   │   ├── ATAC-CCNC-0h-1.bam.bai
+│   │   │   └── ATAC-CCNC-0h-1.bw
+│   │   └── ATAC-CCNC-0h-2
+│   │       ├── ATAC-CCNC-0h-2.bam
+│   │       ├── ATAC-CCNC-0h-2.bam.bai
+│   │       └── ATAC-CCNC-0h-2.bw
+│   ├── 24h
+│   │   ├── ATAC-CCNC-24h-1
+│   │   │   ├── ATAC-CCNC-24h-1.bam
+│   │   │   ├── ATAC-CCNC-24h-1.bam.bai
+│   │   │   └── ATAC-CCNC-24h-1.bw
+│   │   └── ATAC-CCNC-24h-2
+│   │       ├── ATAC-CCNC-24h-2.bam
+│   │       ├── ATAC-CCNC-24h-2.bam.bai
+│   │       └── ATAC-CCNC-24h-2.bw
+│   └── 6h
+│       └── ATAC-CCNC-6h-1
+│           ├── ATAC-CCNC-6h-1.bam
+│           ├── ATAC-CCNC-6h-1.bam.bai
+│           └── ATAC-CCNC-6h-1.bw
+├── CHAF1A
+│   ├── 0h
+│   │   ├── ATAC-CHAF1A-0h-1
+│   │   │   ├── ATAC-CHAF1A-0h-1.bam
+│   │   │   ├── ATAC-CHAF1A-0h-1.bam.bai
+│   │   │   ├── ATAC-CHAF1A-0h-1.bw
+│   │   │   ├── ATAC-CHAF1A-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-CHAF1A-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-CHAF1A-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-CHAF1A-0h-2
+│   │       ├── ATAC-CHAF1A-0h-2.bam
+│   │       ├── ATAC-CHAF1A-0h-2.bam.bai
+│   │       ├── ATAC-CHAF1A-0h-2.bw
+│   │       ├── ATAC-CHAF1A-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-CHAF1A-0h-2.peaks.summits.bed
+│   │       └── ATAC-CHAF1A-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-CHAF1A-24h-1
+│   │   │   ├── ATAC-CHAF1A-24h-1.bam
+│   │   │   ├── ATAC-CHAF1A-24h-1.bam.bai
+│   │   │   ├── ATAC-CHAF1A-24h-1.bw
+│   │   │   ├── ATAC-CHAF1A-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-CHAF1A-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-CHAF1A-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-CHAF1A-24h-2
+│   │       ├── ATAC-CHAF1A-24h-2.bam
+│   │       ├── ATAC-CHAF1A-24h-2.bam.bai
+│   │       ├── ATAC-CHAF1A-24h-2.bw
+│   │       ├── ATAC-CHAF1A-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-CHAF1A-24h-2.peaks.summits.bed
+│   │       └── ATAC-CHAF1A-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-CHAF1A-6h-1
+│       │   ├── ATAC-CHAF1A-6h-1.bam
+│       │   ├── ATAC-CHAF1A-6h-1.bam.bai
+│       │   ├── ATAC-CHAF1A-6h-1.bw
+│       │   ├── ATAC-CHAF1A-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-CHAF1A-6h-1.peaks.summits.bed
+│       │   └── ATAC-CHAF1A-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-CHAF1A-6h-2
+│           ├── ATAC-CHAF1A-6h-2.bam
+│           ├── ATAC-CHAF1A-6h-2.bam.bai
+│           ├── ATAC-CHAF1A-6h-2.bw
+│           ├── ATAC-CHAF1A-6h-2.peaks.narrowPeak
+│           ├── ATAC-CHAF1A-6h-2.peaks.summits.bed
+│           └── ATAC-CHAF1A-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── CHD4
+│   ├── 0h
+│   │   ├── ATAC-CHD4-0h-1
+│   │   │   ├── ATAC-CHD4-0h-1.bam
+│   │   │   ├── ATAC-CHD4-0h-1.bam.bai
+│   │   │   ├── ATAC-CHD4-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-CHD4-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-CHD4-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-CHD4-0h-2
+│   │       ├── ATAC-CHD4-0h-2.bam
+│   │       ├── ATAC-CHD4-0h-2.bam.bai
+│   │       ├── ATAC-CHD4-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-CHD4-0h-2.peaks.summits.bed
+│   │       └── ATAC-CHD4-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-CHD4-24h-1
+│   │   │   ├── ATAC-CHD4-24h-1.bam
+│   │   │   ├── ATAC-CHD4-24h-1.bam.bai
+│   │   │   ├── ATAC-CHD4-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-CHD4-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-CHD4-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-CHD4-24h-2
+│   │       ├── ATAC-CHD4-24h-2.bam
+│   │       ├── ATAC-CHD4-24h-2.bam.bai
+│   │       ├── ATAC-CHD4-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-CHD4-24h-2.peaks.summits.bed
+│   │       └── ATAC-CHD4-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-CHD4-6h-1
+│       │   ├── ATAC-CHD4-6h-1.bam
+│       │   ├── ATAC-CHD4-6h-1.bam.bai
+│       │   ├── ATAC-CHD4-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-CHD4-6h-1.peaks.summits.bed
+│       │   └── ATAC-CHD4-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-CHD4-6h-2
+│           ├── ATAC-CHD4-6h-2.bam
+│           ├── ATAC-CHD4-6h-2.bam.bai
+│           ├── ATAC-CHD4-6h-2.peaks.narrowPeak
+│           ├── ATAC-CHD4-6h-2.peaks.summits.bed
+│           └── ATAC-CHD4-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── FOXA1
+│   ├── 0h
+│   │   ├── ATAC-FOXA1-0h-2
+│   │   │   ├── ATAC-FOXA1-0h-2.bam
+│   │   │   ├── ATAC-FOXA1-0h-2.bam.bai
+│   │   │   ├── ATAC-FOXA1-0h-2.peaks.narrowPeak
+│   │   │   ├── ATAC-FOXA1-0h-2.peaks.summits.bed
+│   │   │   └── ATAC-FOXA1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-FOXA1-0h-3
+│   │       ├── ATAC-FOXA1-0h-3.bam
+│   │       ├── ATAC-FOXA1-0h-3.bam.bai
+│   │       ├── ATAC-FOXA1-0h-3.peaks.narrowPeak
+│   │       ├── ATAC-FOXA1-0h-3.peaks.summits.bed
+│   │       └── ATAC-FOXA1-0h-3.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-FOXA1-24h-1
+│   │   │   ├── ATAC-FOXA1-24h-1.bam
+│   │   │   ├── ATAC-FOXA1-24h-1.bam.bai
+│   │   │   ├── ATAC-FOXA1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-FOXA1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-FOXA1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-FOXA1-24h-2
+│   │       ├── ATAC-FOXA1-24h-2.bam
+│   │       ├── ATAC-FOXA1-24h-2.bam.bai
+│   │       ├── ATAC-FOXA1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-FOXA1-24h-2.peaks.summits.bed
+│   │       └── ATAC-FOXA1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-FOXA1-6h-1
+│       │   ├── ATAC-FOXA1-6h-1.bam
+│       │   ├── ATAC-FOXA1-6h-1.bam.bai
+│       │   ├── ATAC-FOXA1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-FOXA1-6h-1.peaks.summits.bed
+│       │   └── ATAC-FOXA1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-FOXA1-6h-2
+│           ├── ATAC-FOXA1-6h-2.bam
+│           ├── ATAC-FOXA1-6h-2.bam.bai
+│           ├── ATAC-FOXA1-6h-2.peaks.narrowPeak
+│           ├── ATAC-FOXA1-6h-2.peaks.summits.bed
+│           └── ATAC-FOXA1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── FOXM1
+│   ├── 0h
+│   │   ├── ATAC-FOXM1-0h-1
+│   │   │   ├── ATAC-FOXM1-0h-1.bam
+│   │   │   ├── ATAC-FOXM1-0h-1.bam.bai
+│   │   │   ├── ATAC-FOXM1-0h-1.bw
+│   │   │   ├── ATAC-FOXM1-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-FOXM1-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-FOXM1-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-FOXM1-0h-2
+│   │       ├── ATAC-FOXM1-0h-2.bam
+│   │       ├── ATAC-FOXM1-0h-2.bam.bai
+│   │       ├── ATAC-FOXM1-0h-2.bw
+│   │       ├── ATAC-FOXM1-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-FOXM1-0h-2.peaks.summits.bed
+│   │       └── ATAC-FOXM1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-FOXM1-24h-1
+│   │   │   ├── ATAC-FOXM1-24h-1.bam
+│   │   │   ├── ATAC-FOXM1-24h-1.bam.bai
+│   │   │   ├── ATAC-FOXM1-24h-1.bw
+│   │   │   ├── ATAC-FOXM1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-FOXM1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-FOXM1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-FOXM1-24h-2
+│   │       ├── ATAC-FOXM1-24h-2.bam
+│   │       ├── ATAC-FOXM1-24h-2.bam.bai
+│   │       ├── ATAC-FOXM1-24h-2.bw
+│   │       ├── ATAC-FOXM1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-FOXM1-24h-2.peaks.summits.bed
+│   │       └── ATAC-FOXM1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-FOXM1-6h-1
+│       │   ├── ATAC-FOXM1-6h-1.bam
+│       │   ├── ATAC-FOXM1-6h-1.bam.bai
+│       │   ├── ATAC-FOXM1-6h-1.bw
+│       │   ├── ATAC-FOXM1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-FOXM1-6h-1.peaks.summits.bed
+│       │   └── ATAC-FOXM1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-FOXM1-6h-2
+│           ├── ATAC-FOXM1-6h-2.bam
+│           ├── ATAC-FOXM1-6h-2.bam.bai
+│           ├── ATAC-FOXM1-6h-2.bw
+│           ├── ATAC-FOXM1-6h-2.peaks.narrowPeak
+│           ├── ATAC-FOXM1-6h-2.peaks.summits.bed
+│           └── ATAC-FOXM1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── HDAC3
+│   ├── 0h
+│   │   ├── ATAC-HDAC3-0h-1
+│   │   │   ├── ATAC-HDAC3-0h-1.bam
+│   │   │   ├── ATAC-HDAC3-0h-1.bam.bai
+│   │   │   ├── ATAC-HDAC3-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-HDAC3-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-HDAC3-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-HDAC3-0h-2
+│   │       ├── ATAC-HDAC3-0h-2.bam
+│   │       ├── ATAC-HDAC3-0h-2.bam.bai
+│   │       ├── ATAC-HDAC3-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-HDAC3-0h-2.peaks.summits.bed
+│   │       └── ATAC-HDAC3-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-HDAC3-24h-1
+│   │   │   ├── ATAC-HDAC3-24h-1.bam
+│   │   │   ├── ATAC-HDAC3-24h-1.bam.bai
+│   │   │   ├── ATAC-HDAC3-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-HDAC3-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-HDAC3-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-HDAC3-24h-3
+│   │       ├── ATAC-HDAC3-24h-3.bam
+│   │       ├── ATAC-HDAC3-24h-3.bam.bai
+│   │       ├── ATAC-HDAC3-24h-3.peaks.narrowPeak
+│   │       ├── ATAC-HDAC3-24h-3.peaks.summits.bed
+│   │       └── ATAC-HDAC3-24h-3.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-HDAC3-6h-1
+│       │   ├── ATAC-HDAC3-6h-1.bam
+│       │   ├── ATAC-HDAC3-6h-1.bam.bai
+│       │   ├── ATAC-HDAC3-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-HDAC3-6h-1.peaks.summits.bed
+│       │   └── ATAC-HDAC3-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-HDAC3-6h-3
+│           ├── ATAC-HDAC3-6h-3.bam
+│           ├── ATAC-HDAC3-6h-3.bam.bai
+│           ├── ATAC-HDAC3-6h-3.peaks.narrowPeak
+│           ├── ATAC-HDAC3-6h-3.peaks.summits.bed
+│           └── ATAC-HDAC3-6h-3.summary.txt.macs3_frag_peaks.tsv
+├── hg38_exclusion_ENCFF356LFX.bed.gz
+├── INO80
+│   └── 6h
+│       ├── ATAC-INO80-6h-1
+│       │   ├── ATAC-INO80-6h-1.bam
+│       │   ├── ATAC-INO80-6h-1.bam.bai
+│       │   ├── ATAC-INO80-6h-1.bw
+│       │   ├── ATAC-INO80-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-INO80-6h-1.peaks.summits.bed
+│       │   └── ATAC-INO80-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-INO80-6h-2
+│           ├── ATAC-INO80-6h-2.bam
+│           ├── ATAC-INO80-6h-2.bam.bai
+│           ├── ATAC-INO80-6h-2.bw
+│           ├── ATAC-INO80-6h-2.peaks.narrowPeak
+│           ├── ATAC-INO80-6h-2.peaks.summits.bed
+│           └── ATAC-INO80-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── merged_bams
+│   ├── ATAC-ARID1A-6h-merged.possort.bam
+│   ├── ATAC-ARID1A-6h-merged.possort.bam.bai
+│   ├── ATAC-ARID3B-0h-merged.possort.bam
+│   ├── ATAC-ARID3B-0h-merged.possort.bam.bai
+│   ├── ATAC-ARID3B-24h-merged.possort.bam
+│   ├── ATAC-ARID3B-24h-merged.possort.bam.bai
+│   ├── ATAC-ARID3B-6h-merged.possort.bam
+│   ├── ATAC-ARID3B-6h-merged.possort.bam.bai
+│   ├── ATAC-ATR-0h-merged.possort.bam
+│   ├── ATAC-ATR-0h-merged.possort.bam.bai
+│   ├── ATAC-ATR-24h-merged.possort.bam
+│   ├── ATAC-ATR-24h-merged.possort.bam.bai
+│   ├── ATAC-ATR-6h-merged.possort.bam
+│   ├── ATAC-ATR-6h-merged.possort.bam.bai
+│   ├── ATAC-CCNC-0h-merged.possort.bam
+│   ├── ATAC-CCNC-0h-merged.possort.bam.bai
+│   ├── ATAC-CCNC-24h-merged.possort.bam
+│   ├── ATAC-CCNC-24h-merged.possort.bam.bai
+│   ├── ATAC-CCNC-6h-merged.possort.bam
+│   ├── ATAC-CCNC-6h-merged.possort.bam.bai
+│   ├── ATAC-CHAF1A-0h-merged.possort.bam
+│   ├── ATAC-CHAF1A-0h-merged.possort.bam.bai
+│   ├── ATAC-CHAF1A-24h-merged.possort.bam
+│   ├── ATAC-CHAF1A-24h-merged.possort.bam.bai
+│   ├── ATAC-CHAF1A-6h-merged.possort.bam
+│   ├── ATAC-CHAF1A-6h-merged.possort.bam.bai
+│   ├── ATAC-CHD4-0h-merged.nmsort.bam
+│   ├── ATAC-CHD4-0h-merged.possort.bam
+│   ├── ATAC-CHD4-0h-merged.possort.bam.bai
+│   ├── ATAC-CHD4-24h-merged.nmsort.bam
+│   ├── ATAC-CHD4-24h-merged.possort.bam
+│   ├── ATAC-CHD4-24h-merged.possort.bam.bai
+│   ├── ATAC-CHD4-6h-merged.nmsort.bam
+│   ├── ATAC-CHD4-6h-merged.possort.bam
+│   ├── ATAC-CHD4-6h-merged.possort.bam.bai
+│   ├── ATAC-FOXA1-0h-merged.possort.bam
+│   ├── ATAC-FOXA1-0h-merged.possort.bam.bai
+│   ├── ATAC-FOXA1-24h-merged.possort.bam
+│   ├── ATAC-FOXA1-24h-merged.possort.bam.bai
+│   ├── ATAC-FOXA1-6h-merged.possort.bam
+│   ├── ATAC-FOXA1-6h-merged.possort.bam.bai
+│   ├── ATAC-FOXM1-0h-merged.possort.bam
+│   ├── ATAC-FOXM1-0h-merged.possort.bam.bai
+│   ├── ATAC-FOXM1-24h-merged.possort.bam
+│   ├── ATAC-FOXM1-24h-merged.possort.bam.bai
+│   ├── ATAC-FOXM1-6h-merged.possort.bam
+│   ├── ATAC-FOXM1-6h-merged.possort.bam.bai
+│   ├── ATAC-HDAC3-0h-merged.possort.bam
+│   ├── ATAC-HDAC3-0h-merged.possort.bam.bai
+│   ├── ATAC-HDAC3-24h-merged.possort.bam
+│   ├── ATAC-HDAC3-24h-merged.possort.bam.bai
+│   ├── ATAC-HDAC3-6h-merged.possort.bam
+│   ├── ATAC-HDAC3-6h-merged.possort.bam.bai
+│   ├── ATAC-INO80-6h-merged.possort.bam
+│   ├── ATAC-INO80-6h-merged.possort.bam.bai
+│   ├── ATAC-NAT10-0h-merged.possort.bam
+│   ├── ATAC-NAT10-0h-merged.possort.bam.bai
+│   ├── ATAC-NAT10-24h-merged.possort.bam
+│   ├── ATAC-NAT10-24h-merged.possort.bam.bai
+│   ├── ATAC-NAT10-6h-merged.possort.bam
+│   ├── ATAC-NAT10-6h-merged.possort.bam.bai
+│   ├── ATAC-NUP133-0h-merged.possort.bam
+│   ├── ATAC-NUP133-0h-merged.possort.bam.bai
+│   ├── ATAC-NUP133-24h-merged.possort.bam
+│   ├── ATAC-NUP133-24h-merged.possort.bam.bai
+│   ├── ATAC-NUP133-6h-merged.possort.bam
+│   ├── ATAC-NUP133-6h-merged.possort.bam.bai
+│   ├── ATAC-NUP153-0h-merged.possort.bam
+│   ├── ATAC-NUP153-0h-merged.possort.bam.bai
+│   ├── ATAC-NUP153-24h-merged.possort.bam
+│   ├── ATAC-NUP153-24h-merged.possort.bam.bai
+│   ├── ATAC-NUP153-6h-merged.possort.bam
+│   ├── ATAC-NUP153-6h-merged.possort.bam.bai
+│   ├── ATAC-NUP210-0h-merged.possort.bam
+│   ├── ATAC-NUP210-0h-merged.possort.bam.bai
+│   ├── ATAC-NUP210-24h-merged.possort.bam
+│   ├── ATAC-NUP210-24h-merged.possort.bam.bai
+│   ├── ATAC-NUP210-6h-merged.possort.bam
+│   ├── ATAC-NUP210-6h-merged.possort.bam.bai
+│   ├── ATAC-NUP214-0h-merged.possort.bam
+│   ├── ATAC-NUP214-0h-merged.possort.bam.bai
+│   ├── ATAC-NUP214-24h-merged.possort.bam
+│   ├── ATAC-NUP214-24h-merged.possort.bam.bai
+│   ├── ATAC-NUP214-6h-merged.possort.bam
+│   ├── ATAC-NUP214-6h-merged.possort.bam.bai
+│   ├── ATAC-NUP62-0h-merged.possort.bam
+│   ├── ATAC-NUP62-0h-merged.possort.bam.bai
+│   ├── ATAC-NUP62-24h-merged.possort.bam
+│   ├── ATAC-NUP62-24h-merged.possort.bam.bai
+│   ├── ATAC-NUP62-6h-merged.possort.bam
+│   ├── ATAC-NUP62-6h-merged.possort.bam.bai
+│   ├── ATAC-NUP88-0h-merged.possort.bam
+│   ├── ATAC-NUP88-0h-merged.possort.bam.bai
+│   ├── ATAC-NUP88-24h-merged.possort.bam
+│   ├── ATAC-NUP88-24h-merged.possort.bam.bai
+│   ├── ATAC-NUP88-6h-merged.possort.bam
+│   ├── ATAC-NUP88-6h-merged.possort.bam.bai
+│   ├── ATAC-PRMT5-0h-merged.possort.bam
+│   ├── ATAC-PRMT5-0h-merged.possort.bam.bai
+│   ├── ATAC-PRMT5-24h-merged.possort.bam
+│   ├── ATAC-PRMT5-24h-merged.possort.bam.bai
+│   ├── ATAC-PRMT5-6h-merged.possort.bam
+│   ├── ATAC-PRMT5-6h-merged.possort.bam.bai
+│   ├── ATAC-RAD21-0h-merged.possort.bam
+│   ├── ATAC-RAD21-0h-merged.possort.bam.bai
+│   ├── ATAC-RAD21-24h-merged.possort.bam
+│   ├── ATAC-RAD21-24h-merged.possort.bam.bai
+│   ├── ATAC-RAD21-6h-merged.possort.bam
+│   ├── ATAC-RAD21-6h-merged.possort.bam.bai
+│   ├── ATAC-RBBP7-6h-merged.possort.bam
+│   ├── ATAC-RBBP7-6h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA1-0h-merged.possort.bam
+│   ├── ATAC-SMARCA1-0h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA1-24h-merged.possort.bam
+│   ├── ATAC-SMARCA1-24h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA1-6h-merged.possort.bam
+│   ├── ATAC-SMARCA1-6h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA4-0h-merged.possort.bam
+│   ├── ATAC-SMARCA4-0h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA4-24h-merged.possort.bam
+│   ├── ATAC-SMARCA4-24h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA4-6h-merged.possort.bam
+│   ├── ATAC-SMARCA4-6h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA5-0h-merged.possort.bam
+│   ├── ATAC-SMARCA5-0h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA5-24h-merged.possort.bam
+│   ├── ATAC-SMARCA5-24h-merged.possort.bam.bai
+│   ├── ATAC-SMARCA5-6h-merged.possort.bam
+│   ├── ATAC-SMARCA5-6h-merged.possort.bam.bai
+│   ├── ATAC-SMARCB1-0h-merged.possort.bam
+│   ├── ATAC-SMARCB1-0h-merged.possort.bam.bai
+│   ├── ATAC-SMARCB1-24h-merged.possort.bam
+│   ├── ATAC-SMARCB1-24h-merged.possort.bam.bai
+│   ├── ATAC-SMARCB1-6h-merged.possort.bam
+│   ├── ATAC-SMARCB1-6h-merged.possort.bam.bai
+│   ├── ATAC-SMARCC1-0h-merged.possort.bam
+│   ├── ATAC-SMARCC1-0h-merged.possort.bam.bai
+│   ├── ATAC-SMARCC1-24h-merged.possort.bam
+│   ├── ATAC-SMARCC1-24h-merged.possort.bam.bai
+│   ├── ATAC-SMARCC1-6h-merged.possort.bam
+│   ├── ATAC-SMARCC1-6h-merged.possort.bam.bai
+│   ├── ATAC-SMARCD1-0h-merged.possort.bam
+│   ├── ATAC-SMARCD1-0h-merged.possort.bam.bai
+│   ├── ATAC-SMARCD1-24h-merged.possort.bam
+│   ├── ATAC-SMARCD1-24h-merged.possort.bam.bai
+│   ├── ATAC-SMARCD1-6h-merged.possort.bam
+│   ├── ATAC-SMARCD1-6h-merged.possort.bam.bai
+│   ├── ATAC-SSU72-0h-merged.possort.bam
+│   ├── ATAC-SSU72-0h-merged.possort.bam.bai
+│   ├── ATAC-SSU72-24h-merged.possort.bam
+│   ├── ATAC-SSU72-24h-merged.possort.bam.bai
+│   ├── ATAC-SSU72-6h-merged.possort.bam
+│   ├── ATAC-SSU72-6h-merged.possort.bam.bai
+│   ├── ATAC-TFDP1-0h-merged.possort.bam
+│   ├── ATAC-TFDP1-0h-merged.possort.bam.bai
+│   ├── ATAC-TFDP1-24h-merged.possort.bam
+│   ├── ATAC-TFDP1-24h-merged.possort.bam.bai
+│   ├── ATAC-TFDP1-6h-merged.possort.bam
+│   ├── ATAC-TFDP1-6h-merged.possort.bam.bai
+│   ├── ATAC-U2AF2-0h-merged.possort.bam
+│   ├── ATAC-U2AF2-0h-merged.possort.bam.bai
+│   ├── ATAC-U2AF2-6h-merged.possort.bam
+│   ├── ATAC-U2AF2-6h-merged.possort.bam.bai
+│   ├── ATAC-WDHD1-0h-merged.possort.bam
+│   ├── ATAC-WDHD1-0h-merged.possort.bam.bai
+│   ├── ATAC-WDHD1-24h-merged.possort.bam
+│   ├── ATAC-WDHD1-24h-merged.possort.bam.bai
+│   ├── ATAC-YY1-0h-merged.nmsort.bam
+│   ├── ATAC-YY1-0h-merged.possort.bam
+│   ├── ATAC-YY1-0h-merged.possort.bam.bai
+│   ├── ATAC-YY1-24h-merged.nmsort.bam
+│   ├── ATAC-YY1-24h-merged.possort.bam
+│   ├── ATAC-YY1-24h-merged.possort.bam.bai
+│   ├── ATAC-YY1-6h-merged.nmsort.bam
+│   ├── ATAC-YY1-6h-merged.possort.bam
+│   └── ATAC-YY1-6h-merged.possort.bam.bai
+├── NAT10
+│   ├── 0h
+│   │   ├── ATAC-NAT10-0h-1
+│   │   │   ├── ATAC-NAT10-0h-1.bam
+│   │   │   ├── ATAC-NAT10-0h-1.bam.bai
+│   │   │   ├── ATAC-NAT10-0h-1.bw
+│   │   │   ├── ATAC-NAT10-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NAT10-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-NAT10-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NAT10-0h-2
+│   │       ├── ATAC-NAT10-0h-2.bam
+│   │       ├── ATAC-NAT10-0h-2.bam.bai
+│   │       ├── ATAC-NAT10-0h-2.bw
+│   │       ├── ATAC-NAT10-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-NAT10-0h-2.peaks.summits.bed
+│   │       └── ATAC-NAT10-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-NAT10-24h-2
+│   │   │   ├── ATAC-NAT10-24h-2.bam
+│   │   │   ├── ATAC-NAT10-24h-2.bam.bai
+│   │   │   ├── ATAC-NAT10-24h-2.bw
+│   │   │   ├── ATAC-NAT10-24h-2.peaks.narrowPeak
+│   │   │   ├── ATAC-NAT10-24h-2.peaks.summits.bed
+│   │   │   └── ATAC-NAT10-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NAT10-24h-3
+│   │       ├── ATAC-NAT10-24h-3.bam
+│   │       ├── ATAC-NAT10-24h-3.bam.bai
+│   │       ├── ATAC-NAT10-24h-3.bw
+│   │       ├── ATAC-NAT10-24h-3.peaks.narrowPeak
+│   │       ├── ATAC-NAT10-24h-3.peaks.summits.bed
+│   │       └── ATAC-NAT10-24h-3.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-NAT10-6h-1
+│       │   ├── ATAC-NAT10-6h-1.bam
+│       │   ├── ATAC-NAT10-6h-1.bam.bai
+│       │   ├── ATAC-NAT10-6h-1.bw
+│       │   ├── ATAC-NAT10-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-NAT10-6h-1.peaks.summits.bed
+│       │   └── ATAC-NAT10-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-NAT10-6h-2
+│           ├── ATAC-NAT10-6h-2.bam
+│           ├── ATAC-NAT10-6h-2.bam.bai
+│           ├── ATAC-NAT10-6h-2.bw
+│           ├── ATAC-NAT10-6h-2.peaks.narrowPeak
+│           ├── ATAC-NAT10-6h-2.peaks.summits.bed
+│           └── ATAC-NAT10-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── NUP133
+│   ├── 0h
+│   │   └── ATAC-NUP133-0h-1
+│   │       ├── ATAC-NUP133-0h-1.bam
+│   │       ├── ATAC-NUP133-0h-1.bam.bai
+│   │       └── ATAC-NUP133-0h-1.bw
+│   ├── 24h
+│   │   ├── ATAC-NUP133-24h-1
+│   │   │   ├── ATAC-NUP133-24h-1.bam
+│   │   │   ├── ATAC-NUP133-24h-1.bam.bai
+│   │   │   ├── ATAC-NUP133-24h-1.bw
+│   │   │   ├── ATAC-NUP133-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP133-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP133-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP133-24h-2
+│   │       ├── ATAC-NUP133-24h-2.bam
+│   │       ├── ATAC-NUP133-24h-2.bam.bai
+│   │       ├── ATAC-NUP133-24h-2.bw
+│   │       ├── ATAC-NUP133-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP133-24h-2.peaks.summits.bed
+│   │       └── ATAC-NUP133-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-NUP133-6h-1
+│       │   ├── ATAC-NUP133-6h-1.bam
+│       │   ├── ATAC-NUP133-6h-1.bam.bai
+│       │   ├── ATAC-NUP133-6h-1.bw
+│       │   ├── ATAC-NUP133-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-NUP133-6h-1.peaks.summits.bed
+│       │   └── ATAC-NUP133-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-NUP133-6h-2
+│           ├── ATAC-NUP133-6h-2.bam
+│           ├── ATAC-NUP133-6h-2.bam.bai
+│           ├── ATAC-NUP133-6h-2.bw
+│           ├── ATAC-NUP133-6h-2.peaks.narrowPeak
+│           ├── ATAC-NUP133-6h-2.peaks.summits.bed
+│           └── ATAC-NUP133-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── NUP153
+│   ├── 0h
+│   │   ├── ATAC-NUP153-0h-1
+│   │   │   ├── ATAC-NUP153-0h-1.bam
+│   │   │   ├── ATAC-NUP153-0h-1.bam.bai
+│   │   │   ├── ATAC-NUP153-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP153-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP153-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP153-0h-2
+│   │       ├── ATAC-NUP153-0h-2.bam
+│   │       ├── ATAC-NUP153-0h-2.bam.bai
+│   │       ├── ATAC-NUP153-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP153-0h-2.peaks.summits.bed
+│   │       └── ATAC-NUP153-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-NUP153-24h-1
+│   │   │   ├── ATAC-NUP153-24h-1.bam
+│   │   │   ├── ATAC-NUP153-24h-1.bam.bai
+│   │   │   ├── ATAC-NUP153-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP153-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP153-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP153-24h-2
+│   │       ├── ATAC-NUP153-24h-2.bam
+│   │       ├── ATAC-NUP153-24h-2.bam.bai
+│   │       ├── ATAC-NUP153-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP153-24h-2.peaks.summits.bed
+│   │       └── ATAC-NUP153-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-NUP153-6h-1
+│       │   ├── ATAC-NUP153-6h-1.bam
+│       │   ├── ATAC-NUP153-6h-1.bam.bai
+│       │   ├── ATAC-NUP153-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-NUP153-6h-1.peaks.summits.bed
+│       │   └── ATAC-NUP153-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-NUP153-6h-2
+│           ├── ATAC-NUP153-6h-2.bam
+│           ├── ATAC-NUP153-6h-2.bam.bai
+│           ├── ATAC-NUP153-6h-2.peaks.narrowPeak
+│           ├── ATAC-NUP153-6h-2.peaks.summits.bed
+│           └── ATAC-NUP153-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── NUP210
+│   ├── 0h
+│   │   ├── ATAC-NUP210-0h-1
+│   │   │   ├── ATAC-NUP210-0h-1.bam
+│   │   │   ├── ATAC-NUP210-0h-1.bam.bai
+│   │   │   ├── ATAC-NUP210-0h-1.bw
+│   │   │   ├── ATAC-NUP210-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP210-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP210-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP210-0h-2
+│   │       ├── ATAC-NUP210-0h-2.bam
+│   │       ├── ATAC-NUP210-0h-2.bam.bai
+│   │       ├── ATAC-NUP210-0h-2.bw
+│   │       ├── ATAC-NUP210-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP210-0h-2.peaks.summits.bed
+│   │       └── ATAC-NUP210-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-NUP210-24h-1
+│   │   │   ├── ATAC-NUP210-24h-1.bam
+│   │   │   ├── ATAC-NUP210-24h-1.bam.bai
+│   │   │   ├── ATAC-NUP210-24h-1.bw
+│   │   │   ├── ATAC-NUP210-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP210-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP210-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP210-24h-2
+│   │       ├── ATAC-NUP210-24h-2.bam
+│   │       ├── ATAC-NUP210-24h-2.bam.bai
+│   │       ├── ATAC-NUP210-24h-2.bw
+│   │       ├── ATAC-NUP210-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP210-24h-2.peaks.summits.bed
+│   │       └── ATAC-NUP210-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       └── ATAC-NUP210-6h-1
+│           ├── ATAC-NUP210-6h-1.bam
+│           ├── ATAC-NUP210-6h-1.bam.bai
+│           ├── ATAC-NUP210-6h-1.bw
+│           ├── ATAC-NUP210-6h-1.peaks.narrowPeak
+│           ├── ATAC-NUP210-6h-1.peaks.summits.bed
+│           └── ATAC-NUP210-6h-1.summary.txt.macs3_frag_peaks.tsv
+├── NUP214
+│   ├── 0h
+│   │   ├── ATAC-NUP214-0h-1
+│   │   │   ├── ATAC-NUP214-0h-1.bam
+│   │   │   ├── ATAC-NUP214-0h-1.bam.bai
+│   │   │   ├── ATAC-NUP214-0h-1.bw
+│   │   │   ├── ATAC-NUP214-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP214-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP214-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP214-0h-2
+│   │       ├── ATAC-NUP214-0h-2.bam
+│   │       ├── ATAC-NUP214-0h-2.bam.bai
+│   │       ├── ATAC-NUP214-0h-2.bw
+│   │       ├── ATAC-NUP214-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP214-0h-2.peaks.summits.bed
+│   │       └── ATAC-NUP214-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-NUP214-24h-1
+│   │   │   ├── ATAC-NUP214-24h-1.bam
+│   │   │   ├── ATAC-NUP214-24h-1.bam.bai
+│   │   │   ├── ATAC-NUP214-24h-1.bw
+│   │   │   ├── ATAC-NUP214-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP214-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP214-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP214-24h-2
+│   │       ├── ATAC-NUP214-24h-2.bam
+│   │       ├── ATAC-NUP214-24h-2.bam.bai
+│   │       ├── ATAC-NUP214-24h-2.bw
+│   │       ├── ATAC-NUP214-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP214-24h-2.peaks.summits.bed
+│   │       └── ATAC-NUP214-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-NUP214-6h-1
+│       │   ├── ATAC-NUP214-6h-1.bam
+│       │   ├── ATAC-NUP214-6h-1.bam.bai
+│       │   ├── ATAC-NUP214-6h-1.bw
+│       │   ├── ATAC-NUP214-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-NUP214-6h-1.peaks.summits.bed
+│       │   └── ATAC-NUP214-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-NUP214-6h-2
+│           ├── ATAC-NUP214-6h-2.bam
+│           ├── ATAC-NUP214-6h-2.bam.bai
+│           ├── ATAC-NUP214-6h-2.bw
+│           ├── ATAC-NUP214-6h-2.peaks.narrowPeak
+│           ├── ATAC-NUP214-6h-2.peaks.summits.bed
+│           └── ATAC-NUP214-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── NUP62
+│   ├── 0h
+│   │   └── ATAC-NUP62-0h-1
+│   │       ├── ATAC-NUP62-0h-1.bam
+│   │       └── ATAC-NUP62-0h-1.bam.bai
+│   ├── 24h
+│   │   ├── ATAC-NUP62-24h-1
+│   │   │   ├── ATAC-NUP62-24h-1.bam
+│   │   │   └── ATAC-NUP62-24h-1.bam.bai
+│   │   └── ATAC-NUP62-24h-2
+│   │       ├── ATAC-NUP62-24h-2.bam
+│   │       └── ATAC-NUP62-24h-2.bam.bai
+│   └── 6h
+│       ├── ATAC-NUP62-6h-1
+│       │   ├── ATAC-NUP62-6h-1.bam
+│       │   └── ATAC-NUP62-6h-1.bam.bai
+│       └── ATAC-NUP62-6h-2
+│           ├── ATAC-NUP62-6h-2.bam
+│           └── ATAC-NUP62-6h-2.bam.bai
+├── NUP88
+│   ├── 0h
+│   │   ├── ATAC-NUP88-0h-1
+│   │   │   ├── ATAC-NUP88-0h-1.bam
+│   │   │   ├── ATAC-NUP88-0h-1.bam.bai
+│   │   │   ├── ATAC-NUP88-0h-1.bw
+│   │   │   ├── ATAC-NUP88-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP88-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP88-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP88-0h-2
+│   │       ├── ATAC-NUP88-0h-2.bam
+│   │       ├── ATAC-NUP88-0h-2.bam.bai
+│   │       ├── ATAC-NUP88-0h-2.bw
+│   │       ├── ATAC-NUP88-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP88-0h-2.peaks.summits.bed
+│   │       └── ATAC-NUP88-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-NUP88-24h-1
+│   │   │   ├── ATAC-NUP88-24h-1.bam
+│   │   │   ├── ATAC-NUP88-24h-1.bam.bai
+│   │   │   ├── ATAC-NUP88-24h-1.bw
+│   │   │   ├── ATAC-NUP88-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-NUP88-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-NUP88-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-NUP88-24h-2
+│   │       ├── ATAC-NUP88-24h-2.bam
+│   │       ├── ATAC-NUP88-24h-2.bam.bai
+│   │       ├── ATAC-NUP88-24h-2.bw
+│   │       ├── ATAC-NUP88-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-NUP88-24h-2.peaks.summits.bed
+│   │       └── ATAC-NUP88-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-NUP88-6h-1
+│       │   ├── ATAC-NUP88-6h-1.bam
+│       │   ├── ATAC-NUP88-6h-1.bam.bai
+│       │   ├── ATAC-NUP88-6h-1.bw
+│       │   ├── ATAC-NUP88-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-NUP88-6h-1.peaks.summits.bed
+│       │   └── ATAC-NUP88-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-NUP88-6h-2
+│           ├── ATAC-NUP88-6h-2.bam
+│           ├── ATAC-NUP88-6h-2.bam.bai
+│           ├── ATAC-NUP88-6h-2.bw
+│           ├── ATAC-NUP88-6h-2.peaks.narrowPeak
+│           ├── ATAC-NUP88-6h-2.peaks.summits.bed
+│           └── ATAC-NUP88-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── PRMT5
+│   ├── 0h
+│   │   ├── ATAC-PRMT5-0h-1
+│   │   │   ├── ATAC-PRMT5-0h-1.bam
+│   │   │   ├── ATAC-PRMT5-0h-1.bam.bai
+│   │   │   ├── ATAC-PRMT5-0h-1.bw
+│   │   │   ├── ATAC-PRMT5-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-PRMT5-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-PRMT5-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-PRMT5-0h-2
+│   │       ├── ATAC-PRMT5-0h-2.bam
+│   │       ├── ATAC-PRMT5-0h-2.bam.bai
+│   │       ├── ATAC-PRMT5-0h-2.bw
+│   │       ├── ATAC-PRMT5-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-PRMT5-0h-2.peaks.summits.bed
+│   │       └── ATAC-PRMT5-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-PRMT5-24h-1
+│   │   │   ├── ATAC-PRMT5-24h-1.bam
+│   │   │   ├── ATAC-PRMT5-24h-1.bam.bai
+│   │   │   ├── ATAC-PRMT5-24h-1.bw
+│   │   │   ├── ATAC-PRMT5-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-PRMT5-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-PRMT5-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-PRMT5-24h-2
+│   │       ├── ATAC-PRMT5-24h-2.bam
+│   │       ├── ATAC-PRMT5-24h-2.bam.bai
+│   │       ├── ATAC-PRMT5-24h-2.bw
+│   │       ├── ATAC-PRMT5-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-PRMT5-24h-2.peaks.summits.bed
+│   │       └── ATAC-PRMT5-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-PRMT5-6h-1
+│       │   ├── ATAC-PRMT5-6h-1.bam
+│       │   ├── ATAC-PRMT5-6h-1.bam.bai
+│       │   ├── ATAC-PRMT5-6h-1.bw
+│       │   ├── ATAC-PRMT5-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-PRMT5-6h-1.peaks.summits.bed
+│       │   └── ATAC-PRMT5-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-PRMT5-6h-2
+│           ├── ATAC-PRMT5-6h-2.bam
+│           ├── ATAC-PRMT5-6h-2.bam.bai
+│           ├── ATAC-PRMT5-6h-2.bw
+│           ├── ATAC-PRMT5-6h-2.peaks.narrowPeak
+│           ├── ATAC-PRMT5-6h-2.peaks.summits.bed
+│           └── ATAC-PRMT5-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── RAD21
+│   ├── 0h
+│   │   ├── ATAC-RAD21-0h-1
+│   │   │   ├── ATAC-RAD21-0h-1.bam
+│   │   │   ├── ATAC-RAD21-0h-1.bam.bai
+│   │   │   ├── ATAC-RAD21-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-RAD21-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-RAD21-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-RAD21-0h-2
+│   │       ├── ATAC-RAD21-0h-2.bam
+│   │       ├── ATAC-RAD21-0h-2.bam.bai
+│   │       ├── ATAC-RAD21-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-RAD21-0h-2.peaks.summits.bed
+│   │       └── ATAC-RAD21-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-RAD21-24h-1
+│   │   │   ├── ATAC-RAD21-24h-1.bam
+│   │   │   ├── ATAC-RAD21-24h-1.bam.bai
+│   │   │   ├── ATAC-RAD21-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-RAD21-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-RAD21-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-RAD21-24h-2
+│   │       ├── ATAC-RAD21-24h-2.bam
+│   │       ├── ATAC-RAD21-24h-2.bam.bai
+│   │       ├── ATAC-RAD21-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-RAD21-24h-2.peaks.summits.bed
+│   │       └── ATAC-RAD21-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-RAD21-6h-1
+│       │   ├── ATAC-RAD21-6h-1.bam
+│       │   ├── ATAC-RAD21-6h-1.bam.bai
+│       │   ├── ATAC-RAD21-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-RAD21-6h-1.peaks.summits.bed
+│       │   └── ATAC-RAD21-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-RAD21-6h-2
+│           ├── ATAC-RAD21-6h-2.bam
+│           ├── ATAC-RAD21-6h-2.bam.bai
+│           ├── ATAC-RAD21-6h-2.peaks.narrowPeak
+│           ├── ATAC-RAD21-6h-2.peaks.summits.bed
+│           └── ATAC-RAD21-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── RBBP7
+│   └── 6h
+│       ├── ATAC-RBBP7-6h-1
+│       │   ├── ATAC-RBBP7-6h-1.bam
+│       │   ├── ATAC-RBBP7-6h-1.bam.bai
+│       │   ├── ATAC-RBBP7-6h-1.bw
+│       │   ├── ATAC-RBBP7-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-RBBP7-6h-1.peaks.summits.bed
+│       │   └── ATAC-RBBP7-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-RBBP7-6h-2
+│           ├── ATAC-RBBP7-6h-2.bam
+│           ├── ATAC-RBBP7-6h-2.bam.bai
+│           ├── ATAC-RBBP7-6h-2.bw
+│           ├── ATAC-RBBP7-6h-2.peaks.narrowPeak
+│           ├── ATAC-RBBP7-6h-2.peaks.summits.bed
+│           └── ATAC-RBBP7-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SMARCA1
+│   ├── 0h
+│   │   ├── ATAC-SMARCA1-0h-1
+│   │   │   ├── ATAC-SMARCA1-0h-1.bam
+│   │   │   ├── ATAC-SMARCA1-0h-1.bam.bai
+│   │   │   ├── ATAC-SMARCA1-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCA1-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCA1-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCA1-0h-2
+│   │       ├── ATAC-SMARCA1-0h-2.bam
+│   │       ├── ATAC-SMARCA1-0h-2.bam.bai
+│   │       ├── ATAC-SMARCA1-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCA1-0h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCA1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SMARCA1-24h-1
+│   │   │   ├── ATAC-SMARCA1-24h-1.bam
+│   │   │   ├── ATAC-SMARCA1-24h-1.bam.bai
+│   │   │   ├── ATAC-SMARCA1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCA1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCA1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCA1-24h-2
+│   │       ├── ATAC-SMARCA1-24h-2.bam
+│   │       ├── ATAC-SMARCA1-24h-2.bam.bai
+│   │       ├── ATAC-SMARCA1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCA1-24h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCA1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SMARCA1-6h-1
+│       │   ├── ATAC-SMARCA1-6h-1.bam
+│       │   ├── ATAC-SMARCA1-6h-1.bam.bai
+│       │   ├── ATAC-SMARCA1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SMARCA1-6h-1.peaks.summits.bed
+│       │   └── ATAC-SMARCA1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SMARCA1-6h-2
+│           ├── ATAC-SMARCA1-6h-2.bam
+│           ├── ATAC-SMARCA1-6h-2.bam.bai
+│           ├── ATAC-SMARCA1-6h-2.peaks.narrowPeak
+│           ├── ATAC-SMARCA1-6h-2.peaks.summits.bed
+│           └── ATAC-SMARCA1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SMARCA4
+│   ├── 0h
+│   │   ├── ATAC-SMARCA4-0h-1
+│   │   │   ├── ATAC-SMARCA4-0h-1.bam
+│   │   │   ├── ATAC-SMARCA4-0h-1.bam.bai
+│   │   │   ├── ATAC-SMARCA4-0h-1.bw
+│   │   │   ├── ATAC-SMARCA4-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCA4-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCA4-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCA4-0h-2
+│   │       ├── ATAC-SMARCA4-0h-2.bam
+│   │       ├── ATAC-SMARCA4-0h-2.bam.bai
+│   │       ├── ATAC-SMARCA4-0h-2.bw
+│   │       ├── ATAC-SMARCA4-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCA4-0h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCA4-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SMARCA4-24h-1
+│   │   │   ├── ATAC-SMARCA4-24h-1.bam
+│   │   │   ├── ATAC-SMARCA4-24h-1.bam.bai
+│   │   │   ├── ATAC-SMARCA4-24h-1.bw
+│   │   │   ├── ATAC-SMARCA4-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCA4-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCA4-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCA4-24h-2
+│   │       ├── ATAC-SMARCA4-24h-2.bam
+│   │       ├── ATAC-SMARCA4-24h-2.bam.bai
+│   │       ├── ATAC-SMARCA4-24h-2.bw
+│   │       ├── ATAC-SMARCA4-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCA4-24h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCA4-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SMARCA4-6h-1
+│       │   ├── ATAC-SMARCA4-6h-1.bam
+│       │   ├── ATAC-SMARCA4-6h-1.bam.bai
+│       │   ├── ATAC-SMARCA4-6h-1.bw
+│       │   ├── ATAC-SMARCA4-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SMARCA4-6h-1.peaks.summits.bed
+│       │   └── ATAC-SMARCA4-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SMARCA4-6h-2
+│           ├── ATAC-SMARCA4-6h-2.bam
+│           ├── ATAC-SMARCA4-6h-2.bam.bai
+│           ├── ATAC-SMARCA4-6h-2.bw
+│           ├── ATAC-SMARCA4-6h-2.peaks.narrowPeak
+│           ├── ATAC-SMARCA4-6h-2.peaks.summits.bed
+│           └── ATAC-SMARCA4-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SMARCA5
+│   ├── 0h
+│   │   ├── ATAC-SMARCA5-0h-1
+│   │   │   ├── ATAC-SMARCA5-0h-1.bam
+│   │   │   ├── ATAC-SMARCA5-0h-1.bam.bai
+│   │   │   ├── ATAC-SMARCA5-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCA5-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCA5-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCA5-0h-2
+│   │       ├── ATAC-SMARCA5-0h-2.bam
+│   │       ├── ATAC-SMARCA5-0h-2.bam.bai
+│   │       ├── ATAC-SMARCA5-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCA5-0h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCA5-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SMARCA5-24h-1
+│   │   │   ├── ATAC-SMARCA5-24h-1.bam
+│   │   │   ├── ATAC-SMARCA5-24h-1.bam.bai
+│   │   │   ├── ATAC-SMARCA5-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCA5-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCA5-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCA5-24h-2
+│   │       ├── ATAC-SMARCA5-24h-2.bam
+│   │       ├── ATAC-SMARCA5-24h-2.bam.bai
+│   │       ├── ATAC-SMARCA5-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCA5-24h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCA5-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SMARCA5-6h-1
+│       │   ├── ATAC-SMARCA5-6h-1.bam
+│       │   ├── ATAC-SMARCA5-6h-1.bam.bai
+│       │   ├── ATAC-SMARCA5-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SMARCA5-6h-1.peaks.summits.bed
+│       │   └── ATAC-SMARCA5-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SMARCA5-6h-2
+│           ├── ATAC-SMARCA5-6h-2.bam
+│           ├── ATAC-SMARCA5-6h-2.bam.bai
+│           ├── ATAC-SMARCA5-6h-2.peaks.narrowPeak
+│           ├── ATAC-SMARCA5-6h-2.peaks.summits.bed
+│           └── ATAC-SMARCA5-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SMARCB1
+│   ├── 0h
+│   │   ├── ATAC-SMARCB1-0h-1
+│   │   │   ├── ATAC-SMARCB1-0h-1.bam
+│   │   │   ├── ATAC-SMARCB1-0h-1.bam.bai
+│   │   │   ├── ATAC-SMARCB1-0h-1.bw
+│   │   │   ├── ATAC-SMARCB1-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCB1-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCB1-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCB1-0h-2
+│   │       ├── ATAC-SMARCB1-0h-2.bam
+│   │       ├── ATAC-SMARCB1-0h-2.bam.bai
+│   │       ├── ATAC-SMARCB1-0h-2.bw
+│   │       ├── ATAC-SMARCB1-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCB1-0h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCB1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SMARCB1-24h-1
+│   │   │   ├── ATAC-SMARCB1-24h-1.bam
+│   │   │   ├── ATAC-SMARCB1-24h-1.bam.bai
+│   │   │   ├── ATAC-SMARCB1-24h-1.bw
+│   │   │   ├── ATAC-SMARCB1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCB1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCB1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCB1-24h-2
+│   │       ├── ATAC-SMARCB1-24h-2.bam
+│   │       ├── ATAC-SMARCB1-24h-2.bam.bai
+│   │       ├── ATAC-SMARCB1-24h-2.bw
+│   │       ├── ATAC-SMARCB1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCB1-24h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCB1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SMARCB1-6h-1
+│       │   ├── ATAC-SMARCB1-6h-1.bam
+│       │   ├── ATAC-SMARCB1-6h-1.bam.bai
+│       │   ├── ATAC-SMARCB1-6h-1.bw
+│       │   ├── ATAC-SMARCB1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SMARCB1-6h-1.peaks.summits.bed
+│       │   └── ATAC-SMARCB1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SMARCB1-6h-2
+│           ├── ATAC-SMARCB1-6h-2.bam
+│           ├── ATAC-SMARCB1-6h-2.bam.bai
+│           ├── ATAC-SMARCB1-6h-2.bw
+│           ├── ATAC-SMARCB1-6h-2.peaks.narrowPeak
+│           ├── ATAC-SMARCB1-6h-2.peaks.summits.bed
+│           └── ATAC-SMARCB1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SMARCC1
+│   ├── 0h
+│   │   ├── ATAC-SMARCC1-0h-1
+│   │   │   ├── ATAC-SMARCC1-0h-1.bam
+│   │   │   ├── ATAC-SMARCC1-0h-1.bam.bai
+│   │   │   ├── ATAC-SMARCC1-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCC1-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCC1-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCC1-0h-2
+│   │       ├── ATAC-SMARCC1-0h-2.bam
+│   │       ├── ATAC-SMARCC1-0h-2.bam.bai
+│   │       ├── ATAC-SMARCC1-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCC1-0h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCC1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SMARCC1-24h-1
+│   │   │   ├── ATAC-SMARCC1-24h-1.bam
+│   │   │   ├── ATAC-SMARCC1-24h-1.bam.bai
+│   │   │   ├── ATAC-SMARCC1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCC1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCC1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCC1-24h-2
+│   │       ├── ATAC-SMARCC1-24h-2.bam
+│   │       ├── ATAC-SMARCC1-24h-2.bam.bai
+│   │       ├── ATAC-SMARCC1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCC1-24h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCC1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SMARCC1-6h-1
+│       │   ├── ATAC-SMARCC1-6h-1.bam
+│       │   ├── ATAC-SMARCC1-6h-1.bam.bai
+│       │   ├── ATAC-SMARCC1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SMARCC1-6h-1.peaks.summits.bed
+│       │   └── ATAC-SMARCC1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SMARCC1-6h-2
+│           ├── ATAC-SMARCC1-6h-2.bam
+│           ├── ATAC-SMARCC1-6h-2.bam.bai
+│           ├── ATAC-SMARCC1-6h-2.peaks.narrowPeak
+│           ├── ATAC-SMARCC1-6h-2.peaks.summits.bed
+│           └── ATAC-SMARCC1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SMARCD1
+│   ├── 0h
+│   │   ├── ATAC-SMARCD1-0h-1
+│   │   │   ├── ATAC-SMARCD1-0h-1.bam
+│   │   │   ├── ATAC-SMARCD1-0h-1.bam.bai
+│   │   │   ├── ATAC-SMARCD1-0h-1.bw
+│   │   │   ├── ATAC-SMARCD1-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCD1-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCD1-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCD1-0h-2
+│   │       ├── ATAC-SMARCD1-0h-2.bam
+│   │       ├── ATAC-SMARCD1-0h-2.bam.bai
+│   │       ├── ATAC-SMARCD1-0h-2.bw
+│   │       ├── ATAC-SMARCD1-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCD1-0h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCD1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SMARCD1-24h-1
+│   │   │   ├── ATAC-SMARCD1-24h-1.bam
+│   │   │   ├── ATAC-SMARCD1-24h-1.bam.bai
+│   │   │   ├── ATAC-SMARCD1-24h-1.bw
+│   │   │   ├── ATAC-SMARCD1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SMARCD1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SMARCD1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SMARCD1-24h-2
+│   │       ├── ATAC-SMARCD1-24h-2.bam
+│   │       ├── ATAC-SMARCD1-24h-2.bam.bai
+│   │       ├── ATAC-SMARCD1-24h-2.bw
+│   │       ├── ATAC-SMARCD1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SMARCD1-24h-2.peaks.summits.bed
+│   │       └── ATAC-SMARCD1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SMARCD1-6h-1
+│       │   ├── ATAC-SMARCD1-6h-1.bam
+│       │   ├── ATAC-SMARCD1-6h-1.bam.bai
+│       │   ├── ATAC-SMARCD1-6h-1.bw
+│       │   ├── ATAC-SMARCD1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SMARCD1-6h-1.peaks.summits.bed
+│       │   └── ATAC-SMARCD1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SMARCD1-6h-2
+│           ├── ATAC-SMARCD1-6h-2.bam
+│           ├── ATAC-SMARCD1-6h-2.bam.bai
+│           ├── ATAC-SMARCD1-6h-2.bw
+│           ├── ATAC-SMARCD1-6h-2.peaks.narrowPeak
+│           ├── ATAC-SMARCD1-6h-2.peaks.summits.bed
+│           └── ATAC-SMARCD1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── SSU72
+│   ├── 0h
+│   │   ├── ATAC-SSU72-0h-1
+│   │   │   ├── ATAC-SSU72-0h-1.bam
+│   │   │   ├── ATAC-SSU72-0h-1.bam.bai
+│   │   │   ├── ATAC-SSU72-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SSU72-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-SSU72-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SSU72-0h-2
+│   │       ├── ATAC-SSU72-0h-2.bam
+│   │       ├── ATAC-SSU72-0h-2.bam.bai
+│   │       ├── ATAC-SSU72-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-SSU72-0h-2.peaks.summits.bed
+│   │       └── ATAC-SSU72-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-SSU72-24h-1
+│   │   │   ├── ATAC-SSU72-24h-1.bam
+│   │   │   ├── ATAC-SSU72-24h-1.bam.bai
+│   │   │   ├── ATAC-SSU72-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-SSU72-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-SSU72-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-SSU72-24h-2
+│   │       ├── ATAC-SSU72-24h-2.bam
+│   │       ├── ATAC-SSU72-24h-2.bam.bai
+│   │       ├── ATAC-SSU72-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-SSU72-24h-2.peaks.summits.bed
+│   │       └── ATAC-SSU72-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-SSU72-6h-1
+│       │   ├── ATAC-SSU72-6h-1.bam
+│       │   ├── ATAC-SSU72-6h-1.bam.bai
+│       │   ├── ATAC-SSU72-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-SSU72-6h-1.peaks.summits.bed
+│       │   └── ATAC-SSU72-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-SSU72-6h-2
+│           ├── ATAC-SSU72-6h-2.bam
+│           ├── ATAC-SSU72-6h-2.bam.bai
+│           ├── ATAC-SSU72-6h-2.peaks.narrowPeak
+│           ├── ATAC-SSU72-6h-2.peaks.summits.bed
+│           └── ATAC-SSU72-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── TFDP1
+│   ├── 0h
+│   │   ├── ATAC-TFDP1-0h-1
+│   │   │   ├── ATAC-TFDP1-0h-1.bam
+│   │   │   ├── ATAC-TFDP1-0h-1.bam.bai
+│   │   │   ├── ATAC-TFDP1-0h-1.bw
+│   │   │   ├── ATAC-TFDP1-0h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-TFDP1-0h-1.peaks.summits.bed
+│   │   │   └── ATAC-TFDP1-0h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-TFDP1-0h-2
+│   │       ├── ATAC-TFDP1-0h-2.bam
+│   │       ├── ATAC-TFDP1-0h-2.bam.bai
+│   │       ├── ATAC-TFDP1-0h-2.bw
+│   │       ├── ATAC-TFDP1-0h-2.peaks.narrowPeak
+│   │       ├── ATAC-TFDP1-0h-2.peaks.summits.bed
+│   │       └── ATAC-TFDP1-0h-2.summary.txt.macs3_frag_peaks.tsv
+│   ├── 24h
+│   │   ├── ATAC-TFDP1-24h-1
+│   │   │   ├── ATAC-TFDP1-24h-1.bam
+│   │   │   ├── ATAC-TFDP1-24h-1.bam.bai
+│   │   │   ├── ATAC-TFDP1-24h-1.bw
+│   │   │   ├── ATAC-TFDP1-24h-1.peaks.narrowPeak
+│   │   │   ├── ATAC-TFDP1-24h-1.peaks.summits.bed
+│   │   │   └── ATAC-TFDP1-24h-1.summary.txt.macs3_frag_peaks.tsv
+│   │   └── ATAC-TFDP1-24h-2
+│   │       ├── ATAC-TFDP1-24h-2.bam
+│   │       ├── ATAC-TFDP1-24h-2.bam.bai
+│   │       ├── ATAC-TFDP1-24h-2.bw
+│   │       ├── ATAC-TFDP1-24h-2.peaks.narrowPeak
+│   │       ├── ATAC-TFDP1-24h-2.peaks.summits.bed
+│   │       └── ATAC-TFDP1-24h-2.summary.txt.macs3_frag_peaks.tsv
+│   └── 6h
+│       ├── ATAC-TFDP1-6h-1
+│       │   ├── ATAC-TFDP1-6h-1.bam
+│       │   ├── ATAC-TFDP1-6h-1.bam.bai
+│       │   ├── ATAC-TFDP1-6h-1.bw
+│       │   ├── ATAC-TFDP1-6h-1.peaks.narrowPeak
+│       │   ├── ATAC-TFDP1-6h-1.peaks.summits.bed
+│       │   └── ATAC-TFDP1-6h-1.summary.txt.macs3_frag_peaks.tsv
+│       └── ATAC-TFDP1-6h-2
+│           ├── ATAC-TFDP1-6h-2.bam
+│           ├── ATAC-TFDP1-6h-2.bam.bai
+│           ├── ATAC-TFDP1-6h-2.bw
+│           ├── ATAC-TFDP1-6h-2.peaks.narrowPeak
+│           ├── ATAC-TFDP1-6h-2.peaks.summits.bed
+│           └── ATAC-TFDP1-6h-2.summary.txt.macs3_frag_peaks.tsv
+├── U2AF2
+│   ├── 0h
+│   │   ├── ATAC-U2AF2-0h-1
+│   │   │   ├── ATAC-U2AF2-0h-1.bam
+│   │   │   └── ATAC-U2AF2-0h-1.bam.bai
+│   │   └── ATAC-U2AF2-0h-2
+│   │       ├── ATAC-U2AF2-0h-2.bam
+│   │       └── ATAC-U2AF2-0h-2.bam.bai
+│   └── 6h
+│       ├── ATAC-U2AF2-6h-1
+│       │   ├── ATAC-U2AF2-6h-1.bam
+│       │   └── ATAC-U2AF2-6h-1.bam.bai
+│       └── ATAC-U2AF2-6h-2
+│           ├── ATAC-U2AF2-6h-2.bam
+│           └── ATAC-U2AF2-6h-2.bam.bai
+├── WDHD1
+│   ├── 0h
+│   │   ├── ATAC-WDHD1-0h-1
+│   │   │   ├── ATAC-WDHD1-0h-1.bam
+│   │   │   └── ATAC-WDHD1-0h-1.bam.bai
+│   │   └── ATAC-WDHD1-0h-2
+│   │       ├── ATAC-WDHD1-0h-2.bam
+│   │       └── ATAC-WDHD1-0h-2.bam.bai
+│   └── 24h
+│       ├── ATAC-WDHD1-24h-1
+│       │   ├── ATAC-WDHD1-24h-1.bam
+│       │   └── ATAC-WDHD1-24h-1.bam.bai
+│       └── ATAC-WDHD1-24h-2
+│           ├── ATAC-WDHD1-24h-2.bam
+│           └── ATAC-WDHD1-24h-2.bam.bai
+└── YY1
+    ├── 0h
+    │   ├── ATAC-YY1-0h-1
+    │   │   ├── ATAC-YY1-0h-1.bam
+    │   │   ├── ATAC-YY1-0h-1.bam.bai
+    │   │   ├── ATAC-YY1-0h-1.peaks.narrowPeak
+    │   │   ├── ATAC-YY1-0h-1.peaks.summits.bed
+    │   │   └── ATAC-YY1-0h-1.summary.txt.macs3_frag_peaks.tsv
+    │   └── ATAC-YY1-0h-2
+    │       ├── ATAC-YY1-0h-2.bam
+    │       ├── ATAC-YY1-0h-2.bam.bai
+    │       ├── ATAC-YY1-0h-2.peaks.narrowPeak
+    │       ├── ATAC-YY1-0h-2.peaks.summits.bed
+    │       └── ATAC-YY1-0h-2.summary.txt.macs3_frag_peaks.tsv
+    ├── 24h
+    │   ├── ATAC-YY1-24h-1
+    │   │   ├── ATAC-YY1-24h-1.bam
+    │   │   ├── ATAC-YY1-24h-1.bam.bai
+    │   │   ├── ATAC-YY1-24h-1.bw
+    │   │   ├── ATAC-YY1-24h-1.peaks.narrowPeak
+    │   │   ├── ATAC-YY1-24h-1.peaks.summits.bed
+    │   │   └── ATAC-YY1-24h-1.summary.txt.macs3_frag_peaks.tsv
+    │   └── ATAC-YY1-24h-2
+    │       ├── ATAC-YY1-24h-2.bam
+    │       ├── ATAC-YY1-24h-2.bam.bai
+    │       ├── ATAC-YY1-24h-2.peaks.narrowPeak
+    │       ├── ATAC-YY1-24h-2.peaks.summits.bed
+    │       └── ATAC-YY1-24h-2.summary.txt.macs3_frag_peaks.tsv
+    └── 6h
+        ├── ATAC-YY1-6h-1
+        │   ├── ATAC-YY1-6h-1.bam
+        │   ├── ATAC-YY1-6h-1.bam.bai
+        │   ├── ATAC-YY1-6h-1.bw
+        │   ├── ATAC-YY1-6h-1.peaks.narrowPeak
+        │   ├── ATAC-YY1-6h-1.peaks.summits.bed
+        │   └── ATAC-YY1-6h-1.summary.txt.macs3_frag_peaks.tsv
+        └── ATAC-YY1-6h-2
+            ├── ATAC-YY1-6h-2.bam
+            ├── ATAC-YY1-6h-2.bam.bai
+            ├── ATAC-YY1-6h-2.bw
+            ├── ATAC-YY1-6h-2.peaks.narrowPeak
+            ├── ATAC-YY1-6h-2.peaks.summits.bed
+            └── ATAC-YY1-6h-2.summary.txt.macs3_frag_peaks.tsv
+
+282 directories, 1025 files
