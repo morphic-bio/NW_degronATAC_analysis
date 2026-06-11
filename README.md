@@ -19,7 +19,7 @@ NW_degronATAC_analysis/
 │   ├── 01_outputs/
 │   │   └── {GENE}/
 │   │       ├── {tp}_vs_0h.tsv.gz                  # Differential accessibility results (DESeq2)
-│   │       ├── {tp}_vs_0h_DE_MotifEnrich*.tsv.gz  # Motif enrichment in DA peaks
+│   │       ├── {tp}_vs_0h_DE_MotifEnrich.tsv.gz   # Motif enrichment in DA peaks (accompanying png plots show the top 20 enriched motifs)
 │   │       ├── {tp}_vs_0h_DE_GSEA_GO_BP.tsv.gz    # GO biological process enrichment
 │   │       ├── {tp}_vs_0h_DE_GSEA_DO.tsv.gz       # Disease ontology enrichment
 │   │       ├── QC_report_{$GENE}.html             # HTML output report for each gene. It is self-contained, but you will need to download locally for it to render. 
@@ -73,7 +73,7 @@ Outputs per gene/timepoint: `ATAC-{GENE}-{tp}_peaks.filtered.narrowPeak.gz`, `_p
 | File pattern | Contents |
 |---|---|
 | `{tp}_vs_0h.tsv.gz` | DESeq2 results: `peak_coord`, `log2FoldChange`, `padj`, peak annotation columns |
-| `*_DE_MotifEnrich*.tsv.gz` | Motif enrichment in gained/lost DA peaks (monaLisa scores) |
+| `*_DE_MotifEnrich.tsv.gz` | Motif enrichment in gained/lost DA peaks (monaLisa scores) |
 | `*_DE_GSEA_GO_BP.tsv.gz` | GO biological process enrichment (clusterProfiler) |
 | `*_DE_GSEA_DO.tsv.gz` | Disease ontology enrichment (clusterProfiler) |
 | `dracc_metadata.tsv` | Links metadata to input files. This gives a reason code for missing files and should be useful for plotting. |

@@ -206,15 +206,14 @@ if (opt$skip_motif) {
 
     setNames(lapply(conds_with_hits, function(cond) {
       df <- as.data.frame(deseq_object$res_list[[cond]])
-      
+
       if (!identical(peaks_gr$peak_coord, rownames(df)))
         stop(sprintf("Row mismatch for %s: DESeq2 output not aligned with peaks", cond))
-      
+
       perform_motif_enrichment(df, input_info, opt$seed)
     }), conds_with_hits)
-    
-    rm(input_info); rm(peaks_gr); gc()
   })
+  rm(input_info); rm(peaks_gr); gc()
 }
 
 

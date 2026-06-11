@@ -44,6 +44,7 @@
     ├── CHAF1A_e2g_qsub.sh
     ├── CHD4.27639296.out
     ├── CHD4.27657813.out
+    ├── CHD4.27752339.out
     ├── CHD4_e2g_qsub.sh
     ├── FOXA1.27657815.out
     ├── FOXA1_e2g_qsub.sh
@@ -51,12 +52,19 @@
     ├── FOXM1_e2g_qsub.sh
     ├── HDAC3.27657817.out
     ├── HDAC3_e2g_qsub.sh
+    ├── INO80.27657818.out
     ├── INO80_e2g_qsub.sh
     ├── NAT10.27657819.out
     ├── NAT10_e2g_qsub.sh
+    ├── NUP133.27657820.out
     ├── NUP133_e2g_qsub.sh
+    ├── NUP153.27657821.out
     ├── NUP153_e2g_qsub.sh
+    ├── NUP210.27657822.out
+    ├── NUP210.27752372.out
     ├── NUP210_e2g_qsub.sh
+    ├── NUP214.27657823.out
+    ├── NUP214.27752382.out
     ├── NUP214_e2g_qsub.sh
     ├── NUP62.27657824.out
     ├── NUP62_e2g_qsub.sh
@@ -66,6 +74,7 @@
     ├── PRMT5_e2g_qsub.sh
     ├── RAD21.27657829.out
     ├── RAD21_e2g_qsub.sh
+    ├── RBBP7.27657830.out
     ├── RBBP7_e2g_qsub.sh
     ├── SMARCA1.27657832.out
     ├── SMARCA1_e2g_qsub.sh
@@ -75,12 +84,15 @@
     ├── SMARCA5_e2g_qsub.sh
     ├── SMARCB1.27657836.out
     ├── SMARCB1_e2g_qsub.sh
+    ├── SMARCC1.27657838.out
     ├── SMARCC1_e2g_qsub.sh
     ├── SMARCD1.27657839.out
     ├── SMARCD1_e2g_qsub.sh
     ├── SSU72.27657840.out
     ├── SSU72_e2g_qsub.sh
+    ├── TFDP1.27657841.out
     ├── TFDP1_e2g_qsub.sh
+    ├── U2AF2.27657842.out
     ├── U2AF2_e2g_qsub.sh
     ├── WDHD1.27657843.out
     ├── WDHD1_e2g_qsub.sh
@@ -88,4 +100,4 @@
     ├── YY1.27657844.out
     └── YY1_e2g_qsub.sh
 
-2 directories, 86 files
+2 directories, 98 files
